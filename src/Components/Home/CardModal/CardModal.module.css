@@ -1,0 +1,56 @@
+.containerRight {
+  grid-row: 1/3;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.photo {
+  grid-row: 1/4;
+  height: 100%;
+}
+
+.photoSingle {
+  border-radius: 0.7rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.infoNameAccess {
+  color: #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+.infoNameAccess a {
+  color: #ccc;
+}
+
+.infoLogoAccess {
+  display: flex;
+  align-items: center;
+}
+
+.infoLogoAccess svg {
+  margin-right: 0.5rem;
+}
+
+.weightAge {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.weightAge p {
+  margin-right: 1.5rem;
+}
+
+@keyframes loadingEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

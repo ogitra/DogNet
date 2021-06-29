@@ -1,0 +1,50 @@
+.commentsContainer {
+  overflow-y: auto;
+  margin: 1rem 0;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  margin: 0.7rem 0rem;
+}
+
+.commentAuthor {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.addCommentsContainer {
+  align-self: self-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addCommentsContainer > div,
+.addCommentsContainer > div > input {
+  margin: 0;
+  width: 100%;
+  margin-right: 1rem;
+}
+
+.sendComment {
+  border: none;
+  outline: none;
+}
+
+.sendComment:hover svg path {
+  fill: #fb1;
+  stroke: #fb1;
+}
+.sendComment:hover svg g {
+  animation: bark 0.6s infinite;
+}
+
+@keyframes bark {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

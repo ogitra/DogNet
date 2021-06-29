@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+}
+
+.preview {
+  margin-left: 1rem;
+  border-radius: 1rem;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}

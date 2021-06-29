@@ -1,0 +1,17 @@
+.button {
+  background: #fb1;
+  color: #764701;
+  border-radius: 0.4rem;
+  display: block;
+  font-size: 1rem;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  margin: 1rem 0;
+  min-width: 8rem;
+}
+
+.button:hover {
+  outline: none;
+  box-shadow: 0 0 0 3px #fea;
+}

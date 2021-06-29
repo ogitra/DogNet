@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.profileNav {
+  display: flex;
+  width: 25%;
+  min-width: 12rem;
+  justify-content: space-between;
+}
+
+.navItem {
+  background: #eee;
+  border-radius: 0.2rem;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.navItem:hover,
+.navItem:focus {
+  background: #fff;
+  box-shadow: 0 0 0 3px #eee;
+  border-color: #333;
+  outline: none;
+}
+
+.navItem__active,
+.navItem__active:hover,
+.navItem__active:focus,
+.navItem__active svg > * {
+  background: #fff;
+  border-color: #fb1;
+  fill: #fb1;
+}
+
+.mobileNavButton {
+  display: none;
+  background: #eee;
+  border-radius: 0.2rem;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border: 1px solid transparent;
+  transition: 0.1s;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobileNavButton:after {
+  content: '';
+  display: block;
+  width: 1.2rem;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  box-shadow: 0 6px currentColor, 0 -6px currentColor;
+  transition: 0.2s;
+}
+
+@media (max-width: 40rem) {
+  .mobileNavButton {
+    display: flex;
+  }
+  .profileNav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+    border-radius: 0.2rem;
+    padding: 0.7rem;
+  }
+}
+
+.mobileNavButtonActive {
+  background: #fff;
+  box-shadow: 0 0 0 3px #fea;
+  border-color: #fb1;
+  color: #fb1;
+}
+
+.mobileNavButtonActive:after {
+  transform: rotate(-90deg);
+  height: 4px;
+  width: 4px;
+}
+
+.showMobileNav {
+  display: flex;
+}
+
+.mobileNavItem {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-bottom: 1px solid #eee;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  background-color: white;
+  font-family: var(--type-first);
+  font-size: 1rem;
+}
+.mobileNavItem svg {
+  margin-right: 0.5rem;
+}

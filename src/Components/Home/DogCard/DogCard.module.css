@@ -1,0 +1,44 @@
+.container {
+  display: grid;
+}
+
+.container:nth-child(2),
+.container:nth-child(8) {
+  grid-column: 2/4;
+  grid-row: span 2;
+}
+
+.photo {
+  grid-area: 1/1;
+  border-radius: 0.3rem;
+}
+
+.containerCounter {
+  grid-area: 1/1;
+  display: none;
+  color: white;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+}
+
+.containerCounter svg {
+  margin-right: 0.5rem;
+}
+
+.container:hover {
+  cursor: pointer;
+  filter: grayscale(0.6);
+}
+
+.container:hover .containerCounter {
+  display: flex;
+}
+
+@media (max-width: 40rem) {
+  .container:nth-child(2),
+  .container:nth-child(8) {
+    grid-column: initial;
+    grid-row: initial;
+  }
+}

@@ -1,0 +1,33 @@
+.inputContainer {
+  margin: 2rem 0;
+}
+
+.inputLabel {
+  font-weight: bold;
+}
+
+.input {
+  display: block;
+  margin: 0.6rem 0;
+  padding: 0.8rem;
+  border-radius: 4px;
+  background-color: #e5e5e5;
+  border: none;
+  font-size: 1.4rem;
+  outline: none;
+  transition: 0.2s;
+  width: 100%;
+}
+
+.input:hover,
+.input:focus {
+  outline: none;
+  border-color: #fb1;
+  background: #fff;
+  box-shadow: 0 0 0 3px #fea;
+}
+
+.inputError {
+  color: #ff3311;
+  font-size: 0.875rem;
+}

@@ -1,0 +1,10 @@
+.footer {
+  background: #fb1;
+  color: #764701;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer svg {
+  margin-bottom: 1rem;
+}
